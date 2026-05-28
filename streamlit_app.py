@@ -78,7 +78,7 @@ st.sidebar.title("Instruction")
 st.sidebar.markdown("""
 **1. Upload Feature File**
 
-Upload an extracted I3D feature file in `.npy` format. You may refer the GitHub repo Input directory to select the `.npy` file for testing.
+Upload an extracted I3D feature file in `.npy` format. You may refer the GitHub repo here to select the `.npy` file for testing: https://github.com/JanLimST/LST__dl_streamlit/tree/main/input/SH_Test_ten_crop_i3d
 
 If you need more data, you may download it from here:  
 https://drive.google.com/file/d/1xKx4QkB_1QS84ecONUYBsg5M9t3TpncC/view

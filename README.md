@@ -5,6 +5,7 @@ The I3D feature files used for testing are based on the following repository:
 
 benedictstar. (2024). *Joint-VAD* [Data set and code repository]. GitHub. Retrieved from https://github.com/benedictstar/Joint-VAD
 
+You may refer the GitHub repo here to select the `.npy` file for testing: https://github.com/JanLimST/LST__dl_streamlit/tree/main/input/SH_Test_ten_crop_i3d
 Additional feature files can be downloaded from:  
 https://drive.google.com/file/d/1xKx4QkB_1QS84ecONUYBsg5M9t3TpncC/view
 

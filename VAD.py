@@ -229,7 +229,7 @@ def load_i3d_feature(feature_path):
 
 # --- Anomaly Detection ---
 # Run video anomaly detection from an existing I3D feature file.
-def VAD(feature_path, threshold=0.5, target_segment=32):
+def VAD(feature_path, threshold=0.2425, target_segment=32):
 
     raw_i3d_feature, snippet_features = load_i3d_feature(feature_path)
 
@@ -264,7 +264,7 @@ def VAD(feature_path, threshold=0.5, target_segment=32):
         end = vad_snippet_edges[snippet_index + 1]
         frame_anomaly_probs[start:end] = all_snippet_anomaly_prob[snippet_index]
 
-    detected_anomaly_frames = np.where(frame_anomaly_probs >= threshold)[0]
+    detected_anomaly_frames = np.where(frame_anomaly_probs >= 0.5)[0]
 
     # Group individual anomaly frames into continuous ranges
     if len(detected_anomaly_frames) > 0:
